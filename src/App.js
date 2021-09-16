@@ -18,7 +18,8 @@ class App extends Component {
     this.state={
       inputUrlText:'',
       inputUrl:'',
-      concepts:''
+      concepts:'',
+      isloading: false
     }
   }
 
@@ -30,7 +31,7 @@ class App extends Component {
   };
   onimageSubmit=()=>{
     this.setState((state)=>{
-      return {inputUrl:this.state.inputUrlText}
+      return {inputUrl:this.state.inputUrlText, isloading: true}
     });
     app.models.predict(Clarifai.GENERAL_MODEL, this.state.inputUrlText)
       .then(
@@ -46,14 +47,14 @@ class App extends Component {
       );
   };
   updateConcepts=(con)=>{
-    this.setState({concepts:con});
+    this.setState({concepts:con, isloading: false});
   }
   render(){
       return (
         <div className="App">
           <Navigation/>
           <Logo/><Rank/>
-          <ImageLinkForm inputChange={this.oninputchange} onbuttonClick={this.onimageSubmit} concepts={this.state.concepts}/>
+          <ImageLinkForm isloading={this.state.isloading} inputChange={this.oninputchange} onbuttonClick={this.onimageSubmit} concepts={this.state.concepts}/>
           <FaceRecognition imgurl={this.state.inputUrlText}/>
         </div>
       ); 
