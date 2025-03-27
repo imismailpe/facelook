@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/facelook/static/css/main.4ff7780b.chunk.css",
+    "main.js": "/facelook/static/js/main.56febd2d.chunk.js",
+    "main.js.map": "/facelook/static/js/main.56febd2d.chunk.js.map",
+    "runtime~main.js": "/facelook/static/js/runtime~main.404ab61c.js",
+    "runtime~main.js.map": "/facelook/static/js/runtime~main.404ab61c.js.map",
+    "static/css/2.31dafeb2.chunk.css": "/facelook/static/css/2.31dafeb2.chunk.css",
+    "static/js/2.9159a55b.chunk.js": "/facelook/static/js/2.9159a55b.chunk.js",
+    "static/js/2.9159a55b.chunk.js.map": "/facelook/static/js/2.9159a55b.chunk.js.map",
+    "index.html": "/facelook/index.html",
+    "precache-manifest.9b48acdda288d4b32741040faa2d5dfe.js": "/facelook/precache-manifest.9b48acdda288d4b32741040faa2d5dfe.js",
+    "service-worker.js": "/facelook/service-worker.js",
+    "static/css/2.31dafeb2.chunk.css.map": "/facelook/static/css/2.31dafeb2.chunk.css.map",
+    "static/css/main.4ff7780b.chunk.css.map": "/facelook/static/css/main.4ff7780b.chunk.css.map"
+  }
+}
